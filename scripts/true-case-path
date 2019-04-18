@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) path" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# != 1 ]] && usage
+
+path=
+IFS=/; set $1;IFS=
+while [[ $# != 0 ]]; do
+    [[ -z "$1" ]] && shift && continue
+    [[ "$1" == . ]] && { [[ -z "$path" ]] && path="." || path="$path"/$1; shift; continue; }
+    [ -e "$path"/$1 ] && {
+        [[ -z "$path" ]] && path=/"$1" || path="$path"/$1; shift; continue
+    }
+    [[ -z "$path" ]] && path=/
+    find="$(find "$path" -iname "$1" -maxdepth 1 | head -1)"
+    [ -e "$find" ] && path="$find" || exit 0
+    shift
+done
+echo $path

@@ -1,0 +1,14 @@
+{
+  "name": "shell-true-case-path",
+  "version": "2019.4.17",
+  "description": "get case exact path as stored in the filesystem",
+  "keywords": [
+    "case",
+    "path"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/shell-true-case-path",
+  "license": "Unlicense",
+  "bin": {
+    "true-case-path": "./scripts/true-case-path"
+  }
+}
