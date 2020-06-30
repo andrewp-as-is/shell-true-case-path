@@ -1,24 +1,21 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
+https://readme42.com
 -->
+
+
 
 [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/v/shell-true-case-path.svg?maxAge=3600)](https://pypi.org/project/shell-true-case-path/)
-[![](https://img.shields.io/npm/v/shell-true-case-path.svg?maxAge=3600)](https://www.npmjs.com/package/shell-true-case-path)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/shell-true-case-path.svg?branch=master)](https://travis-ci.org/looking-for-a-job/shell-true-case-path/)
+[![](https://img.shields.io/npm/v/shell-true-case-path.svg?maxAge=3600)](https://www.npmjs.com/package/shell-true-case-path)[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/shell-true-case-path/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/shell-true-case-path/actions)
 
-#### Installation
-```bash
-$ [sudo] npm i -g shell-true-case-path
-```
+### Installation
 ```bash
 $ [sudo] pip install shell-true-case-path
 ```
 
-#### Scripts usage
 ```bash
-usage: true-case-path path
+$ [sudo] npm i -g shell-true-case-path
 ```
 
 #### Examples
@@ -28,5 +25,5 @@ $ true-case-path ~/downloads
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>
