@@ -1,6 +1,6 @@
 {
   "name": "shell-true-case-path",
-  "version": "2019.4.17",
+  "version": "2020.12.3",
   "description": "get case exact path as stored in the filesystem",
   "keywords": [
     "case",
